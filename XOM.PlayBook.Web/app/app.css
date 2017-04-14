@@ -1,0 +1,143 @@
+﻿.logo {
+    background-repeat: no-repeat;
+    
+    margin-top: -5px;
+    overflow: hidden;
+  
+    
+    top: 75%;
+    width: 125px;
+    height: 38px;
+    
+}
+
+
+.row {
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+div.em-c-solid-card.em-c-solid-card--blue {
+    margin-left: auto;
+    margin-right: auto;
+    width: 165%;
+}
+
+#categoryHeader {
+    border-top: 1px solid #d8cccc;
+    cursor: default;
+    font-size: 1.475rem
+}
+
+a.em-c-accordion__title.em-js-accordion-trigger {
+
+    text-decoration: none;
+}
+a.em-c-primary-nav__link {
+
+    text-decoration: none;
+}
+
+a.em-c-primary-nav__sublink {
+
+    text-decoration: none;
+    cursor: default;
+    font-size: 1.475rem
+}
+
+.em-c-btn--large {
+        background-image: linear-gradient(45deg,#3a397b 0,#0c69b0 100%);
+
+}
+
+span.em-c-btn__text {
+       letter-spacing: .01rem;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    color: white;
+}
+
+span.glyphicon {
+    padding: 7px;
+}
+
+h1.assessHeader {
+    font-family: EMprint,Arial,Tahoma;
+    font-size: 22px !important;
+    color: #212121 !important;
+        width: calc(100% - 510px) !important;
+}
+
+
+p#assessDate {
+    font-size: 1.2rem !important;
+}
+
+.status_items {
+    position:relative;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress_tracker__label {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    color: #5a5555;
+}
+
+.progress_title {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    background: #fff;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+
+
+.notes.border.assess {
+        border-top: 0px solid transparent !important;
+}
+
+.progress_tracker__label:not(:last-of-type):after{
+    content:'';
+    position:absolute;
+    left:7px;
+    top:20px;
+    bottom:-3px;
+    float:left;
+    width:1px;
+    background:#bdbdbd
+}
+
+
+
+
+.progress_span {
+    padding: 0px !important;
+    z-index: 3;
+    width: 16px;
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 10px;
+    margin-right: -40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+}
+
+.progress_tracker__item {
+    margin-left: 27em;
+    margin-right: 1em;
+}

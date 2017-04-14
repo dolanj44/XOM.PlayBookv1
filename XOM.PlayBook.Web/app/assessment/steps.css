@@ -1,0 +1,32 @@
+﻿.progressBar {
+  display:inline-block;
+    color:#005f7f;
+    height:100%;
+    width:15%;
+    background-color:#FFF;
+    box-shadow:#FFF;
+}
+
+.progressBar i {
+    margin-left:43%;
+    margin-right:40%;
+}
+
+.progressBar h4 {
+    text-align:center;
+}
+
+.progressActive {
+    font-size:5em;
+         color:#00aca8;
+}
+
+.progressInactive {
+    font-size:3em;
+}
+
+.progressComplete {
+     color:#00aca8;
+}
+
+

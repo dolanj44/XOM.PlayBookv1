@@ -1,0 +1,72 @@
+﻿#categoryHeader {
+    border-top: 1px solid #d8cccc;
+    cursor: default;
+    font-size: 1.475rem
+}
+
+a.em-c-accordion__title.em-js-accordion-trigger {
+
+    text-decoration: none;
+}
+
+.em-c-btn--large {
+        background-image: linear-gradient(45deg,#3a397b 0,#0c69b0 100%);
+
+}
+
+span.em-c-btn__text {
+       letter-spacing: .01rem;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    color: white;
+                  }
+
+.questionContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    min-height: 455px;
+}
+
+.questionLabel {
+    font-size:2.5rem;
+}
+
+.question {
+    margin-bottom:10px;
+}
+/* Hidding the radiobuttons & checkboxes */
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+
+/* Hidding the "check" status of inputs */
+
+input[type="radio"] + label .fa-circle,
+input[type="checkbox"] + label .fa-check {
+  display: none;
+}
+
+
+/* Styling the "check" status */
+
+input[type="radio"]:checked + label .fa-circle,
+input[type="checkbox"]:checked + label .fa-check {
+  display: block;
+  color: #00aca8;
+}
+
+.em-c-input-group h4 {
+    margin-left: 11px;
+    display: inline;
+    vertical-align: middle;
+    font-size: 1.5em;
+    color: #00306b;
+}
+
+.fa-circle-o {
+    color: #00306b;
+}
