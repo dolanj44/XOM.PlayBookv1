@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.PlayBook.Data", "XOM.PlayBook.Data\XOM.PlayBook.Data.csproj", "{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DED8269A-ABF4-404E-8384-508E216C30DB} = {DED8269A-ABF4-404E-8384-508E216C30DB}
+		{5AB1999F-5B21-4327-93DC-3F767D370358} = {5AB1999F-5B21-4327-93DC-3F767D370358}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.PlayBook.Model", "XOM.PlayBook.Model\XOM.PlayBook.Model.csproj", "{DED8269A-ABF4-404E-8384-508E216C30DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.PlayBook.API", "XOM.PlayBook.API\XOM.PlayBook.API.csproj", "{92F25D2E-848C-4223-BF88-160CECEEB75F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC} = {F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}
+		{DED8269A-ABF4-404E-8384-508E216C30DB} = {DED8269A-ABF4-404E-8384-508E216C30DB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.PlayBook.Web", "XOM.PlayBook.Web\XOM.PlayBook.Web.csproj", "{243E8270-222F-415C-9555-155CBAA2716C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.Framework", "XOM.PlayBook.Framework\XOM.Framework.csproj", "{5AB1999F-5B21-4327-93DC-3F767D370358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XOM.PlayBook.Service", "XOM.PlayBook.ServiceLayer\XOM.PlayBook.Service.csproj", "{98EC539B-D74E-4432-B26D-FCD26E043A44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92F25D2E-848C-4223-BF88-160CECEEB75F} = {92F25D2E-848C-4223-BF88-160CECEEB75F}
+		{DED8269A-ABF4-404E-8384-508E216C30DB} = {DED8269A-ABF4-404E-8384-508E216C30DB}
+		{5AB1999F-5B21-4327-93DC-3F767D370358} = {5AB1999F-5B21-4327-93DC-3F767D370358}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F803AE87-0AD7-4A0C-A7B9-75E4272BA8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED8269A-ABF4-404E-8384-508E216C30DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED8269A-ABF4-404E-8384-508E216C30DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED8269A-ABF4-404E-8384-508E216C30DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED8269A-ABF4-404E-8384-508E216C30DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F25D2E-848C-4223-BF88-160CECEEB75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F25D2E-848C-4223-BF88-160CECEEB75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F25D2E-848C-4223-BF88-160CECEEB75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F25D2E-848C-4223-BF88-160CECEEB75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{243E8270-222F-415C-9555-155CBAA2716C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243E8270-222F-415C-9555-155CBAA2716C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243E8270-222F-415C-9555-155CBAA2716C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{243E8270-222F-415C-9555-155CBAA2716C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243E8270-222F-415C-9555-155CBAA2716C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB1999F-5B21-4327-93DC-3F767D370358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB1999F-5B21-4327-93DC-3F767D370358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB1999F-5B21-4327-93DC-3F767D370358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB1999F-5B21-4327-93DC-3F767D370358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EC539B-D74E-4432-B26D-FCD26E043A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EC539B-D74E-4432-B26D-FCD26E043A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EC539B-D74E-4432-B26D-FCD26E043A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EC539B-D74E-4432-B26D-FCD26E043A44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

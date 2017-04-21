@@ -1,0 +1,33 @@
+<div id="viewholder">
+    <div id="page" class="requestPage">
+        <!--<div ng-include="'app/assessment/steps.html'"></div>-->
+        <div class="middle">
+            <div class="col">
+                <div class="notes border assess">
+                    <div class="header">
+                        <h1 class="assessHeader">DevOps Assessment</h1>
+                        Active = {{active}}  SubSection = {{subsection}}
+                    </div>
+                    <div class="infoContainer">
+
+                        <div class="status_items">
+                            <div ng-controller="appCtrl" ng-include="'app/assessment/steps.html'">
+                                <div class="em-c-solid-card__footer">Try to achieve 100 in each category</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div ng-cloak ng-controller="appCtrl">
+                            <div class="questionContainer">
+                                <div class="question" ng-repeat="ass in assessment | filter:{category:categories[active]} | slice:subsection:subsection+3" ng-include="'app/assessment/questions.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a ng-click="navigate();" class="em-c-btn em-c-button--primary em-c-btn--large"><span class="em-c-btn__text">Back</span></a>
+                        <a style="float:right;" ng-click="navigate();" class="em-c-btn em-c-button--primary em-c-btn--large"><span class="em-c-btn__text">Next</span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

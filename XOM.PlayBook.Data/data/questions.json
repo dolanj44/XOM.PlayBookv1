@@ -1,0 +1,11 @@
+﻿[
+  {
+    "Section": "Continous Integration",
+    "Title": "Source code management  (SCM) use",
+    "Option 1": "No SCM",
+    "Option 2": "SCM for application code",
+    "Option 3": "+ Configuration, configuration\nscripts, and infrastructure code",
+    "Option 4": "+ Test source code",
+    "Option 5": "+ Builds and containers"
+  }
+]

@@ -1,0 +1,9 @@
+<div class="progress_tracker">
+    <div  class="progress_tracker__item">
+        <span class="fa-stack iconwrapper progressBar" ng-repeat="category in categories">
+            <i ng-class="{'fa-check-square-o fa-5x progressActive':  $index == active, 'fa-3x fa-check-square-o':  $index >= active, 'fa-3x fa-check-square progressComplete':  $index < active  }" class="fa"></i>
+            <h4 class="">{{category}}</h4>
+        </span>
+    </div>
+</div>
+<!-- end em-c-progress-tracker -->
