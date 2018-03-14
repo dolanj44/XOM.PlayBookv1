@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app" ng-strict-di>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title data-ng-bind="title"></title>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+
+    <!-- inject-vendor:css -->
+    <link href="components/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="components/alertify/alertify.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="components/toastr/toastr.min.css" />
+    <!-- endinject -->
+    <!-- inject-exxon:css -->
+    <link href="components/exxon/em-unity-1.1.1.min.css" rel="stylesheet" />
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link href="app/tiles.min.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="app/assessment/steps.css" rel="stylesheet" />
+    <link href="app/assessment/questions.css" rel="stylesheet" />
+    <!-- endinject -->
+</head>
+<body class="em-theme--blue em-js" ng-app="xomPlayBookApp" >
+    <div ng-include="'app/layout/header.html'"></div>
+        <div id="main">
+
+            <!-- angular templating 
+            <!-- this is where content will be injected -->
+            <div ng-view></div>
+
+         </div>
+
+
+    <!-- inject-vendor:js -->
+    <script src="components/jquery/jquery-3.1.1.min.js"></script>
+    <script src="components/d3/d3.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="components/angular-route/angular-route.min.js"></script>
+    <script src="components/angular-animate/angular-animate.min.js"></script>
+    <script src="components/angular-resource/angular-resource.min.js"></script>
+    <script src="components/bootstrap/bootstrap.min.js"></script>
+    <script src="components/moment/moment.min.js"></script>
+    <script src="components/toastr/toastr.min.js"></script>
+    <script src="components/chart/Chart.min.js"></script>
+    <!-- endinject -->
+    <!-- inject-exxon:js -->
+    <script src="components/exxon/em-unity-1.1.1.min.js"></script>
+    <!-- endinject -->
+
+  
+    <!-- inject:js -->
+    <!-- Bootstrapping -->
+
+    <script src="app/app.module.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/assessment/assessment.controller.js"></script>
+
+
+    <!-- Reusable Blocks/Modules -->
+    <!--<script src="app/blocks/router/routehelper.js"></script>-->
+    <script src="app/blocks/router/router.module.js"></script>
+    <script src="app/blocks/logger/logger.module.js"></script>
+    <script src="app/blocks/logger/logger.js"></script>
+    <script src="app/blocks/exception/exception.module.js"></script>
+    <script src="app/blocks/exception/exception.js"></script>
+    <script src="app/blocks/exception/exception-handler.provider.js"></script>
+
+
+    <!-- layout -->
+    <!--<script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/shell.js"></script>
+    <script src="app/layout/sidebar.js"></script>-->
+
+
+
+    <!-- endinject -->
+</body>
+</html>
